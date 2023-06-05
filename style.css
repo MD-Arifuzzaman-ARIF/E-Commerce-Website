@@ -1,219 +1,103 @@
-@import url('https://fronts.googleapis.com/css?family=Poppins:200,300,400,500,600,7000,800,900&display=swap');
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-}
-body{
-    background: rgb(143, 157, 161);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-.container{
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 1000px;
-    background: #fff;
-    margin:  50px;
-    display: grid;
-  grid-template-columns: 1fr 2fr;
-     box-shadow: 0 35px 55px rgba(0,0,0,0,1);
-
-}
-.container .left_side
-{ 
-position: relative;
-background: #6691bf; 
-padding: 40px;
-     
-}
-.container .right_side
-{
-position: relative;
-background: #fff; 
-padding: 40px;
-     
-}
-.profileText{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-     border-bottom: 1px solid rgba(255,255,255,0,2);
-}
-.profileText .imgbx{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50px;
-    overflow: hidden;
-}
-.profileText .imgbx img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height:100% ;
-    object-fit: fill;
-}
-.profileText h4{
-    color: #fff;
-    font-size: .8em;
-    margin: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.4em;
-}
-.profileText h4 span{
-    font-size: .9em;
-    font-weight: 300;
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+/*              Sass Template           */
+/*  global classes  */
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-.contactinfo{
-    padding-top: 40px;
-}
-.title{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-.contactinfo ul{
-    position: relative;
-
+/* typography classes */
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
 }
 
-.contactinfo ul li{
-    position: relative;
-    list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
-    
+.font-rale {
+  font-family: "Raleway", cursive;
 }
 
-.contactinfo ul li .icon{
-    display: inline-block;
-    width: 30px;
-    font-size:18px ;
-    color: rgb(42, 18, 194);
-}
-.contactinfo ul li span {
-    color: #fff;
-    font-weight: 300;
-    
-}
-.contactinfo.education li{
-    margin-bottom: 15px;
-}
-.contactinfo.education h5{
-    color:#fff;
-    font-weight: 500;
-}
-.contactinfo.education h4{
-    color: #fff;
-    font-weight: 300;
-} 
-
-.contactinfo.education h4:nth-child(2){
-    color: #fff;
-    font-weight: 500;
+.font-rubik {
+  font-family: "Rubik", cursive;
 }
 
-.contactinfo.language .percent{
-    position: relative;
-width: 100%;
-height: 6px; 
-background: #565359;
-display: block;
-margin-top: 5px;
+.font-size-12 {
+  font-size: 12px;
 }
-.contactinfo.language .percent div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #66bfaa;
+
+.font-size-14 {
+  font-size: 14px;
 }
-.about{
-    margin-bottom: 50px;
+
+.font-size-16 {
+  font-size: 16px;
 }
-.about:last-child{
-    margin-bottom: 0;
+
+.font-size-20 {
+  font-size: 20px;
 }
-.title2{
-    color: #2579a9;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+
+/* Color Template  */
+.color-primary {
+  color: #003859;
 }
-p{
-    color:#22a1c1 ;
-} 
-.about .box{
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0;
+
+.color-primary-bg {
+  background: #003859;
 }
-.about .box .year_company{
-    min-width: 150px;
+
+.color-second {
+  color: #00A5C4;
 }
-.about .box .year_company h5{
-    text-transform: uppercase;
-    color: #2579a9;
-    font-weight: 600;
+
+.color-second-bg {
+  background: #00A5C4;
 }
-.about .box .text h4{
-    text-transform: uppercase;
-    color: #2579a9;
-    font-size: 16px;
+
+.color-yellow {
+  color: #FFD289;
 }
-.skills .box{
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    justify-content: center;
-    align-items: center;
-     
+
+.color-yellow-bg {
+  background: #FFD289;
 }
-.skills .box h4{
-    text-transform: uppercase;
-    color: #2579a9;
-    font-weight: 500;
+
+/*  top sale template   */
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
 }
-.skills .box .percent{
-    position: relative;
-    width: 100%;
-    height: 5px; 
-    background: #66bfaa; 
-    
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
 }
-.skills .box .percent div{
-    position: absolute; 
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #66bfaa;;
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
 }
-.interest ul{
-    display: grid;
-    grid-template-columns: repeat(4,3fr);
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
 }
-.interest ul li{
-    list-style: none;
-    color: #66bfaa;
-    font-weight: 500;
-    margin: 10px 0;
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
 }
-.interest ul li fa{
-    color: #8b2a2a;
-    font-size: 18px;
-    width: 20px;
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #003859;
+  padding: 0 1rem;
 }
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
+}
+
+/*   Special Price Section Template */
+#special-price .grid .grid-item {
+  margin-right: 1.2rem;
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
